@@ -121,13 +121,13 @@
   font-weight: var(--font-weight-bold, 700);
 }
 
-section {
-  margin-block-end: 50px;
+.header__paragraph {
+  margin-block-end: 46px;
+  margin-block-start: 56px;
 }
 
-.header__paragraph {
-
-  margin-block: 56px;
+section {
+  margin-block-end: 50px;
 }
 
 a {
@@ -156,7 +156,6 @@ a:focus {
 .content__title {
   color: var(--accent-color);
   margin-block-start: var(--margin-l);
-  margin-block-end: var(--margin-m);
 }
 
 .content__paragraph {
@@ -170,6 +169,10 @@ a:focus {
 
 .title__item {
   font-weight: var(--font-weight-normal);
+  margin-block-start: var(--margin-m);
+}
+
+.content__item > .title {
   margin-block-start: var(--margin-m);
 }
 
