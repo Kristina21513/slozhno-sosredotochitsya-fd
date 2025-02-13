@@ -47,6 +47,10 @@
   outline: 1px solid var( --accent-color);
 }
 
+.theme-dark .content__title {
+  color: var(--accent-color);
+}
+
 .theme-dark .footer::before {
   border-top:  1px solid var( --accent-color);
   border-right:  1px solid var( --accent-color);
