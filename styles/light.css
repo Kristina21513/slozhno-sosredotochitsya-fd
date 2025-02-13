@@ -38,8 +38,9 @@
 }
 
 .theme-light .content__title {
-  color: var(--main-text-color); 
+  color: var(--main-text-color);
 }
+
 .theme-light .footer::before {
   border-top:  1px solid var(--main-text-color);
   border-right:  1px solid var(--main-text-color);
@@ -89,7 +90,7 @@ border-left:  1px solid var(--main-text-color);
     }
     
     .content__title {
-      color: var(--main-text-color); 
+      color: var(--main-text-color);
     }
 
     .footer::before {

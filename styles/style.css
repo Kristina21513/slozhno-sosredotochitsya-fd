@@ -23,7 +23,8 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
   position: relative;
-  block-size: 100vh;
+  height: 100vh;
+  min-height: 668px;
 }
 
 .decor::before {
@@ -195,7 +196,8 @@ img {
   padding-block: 275px;
   position: relative;
   text-shadow: 2px 2px 0 var(--accent-color);
-  block-size: 100vh;
+  height: 100vh;
+  min-height: 668px;
 }
 
 .footer::before {
@@ -286,7 +288,6 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto 318px;
     height: 100%;
-    margin-block-end: 60px;
     gap:var(--margin-m);
     margin-block-end: 80px;
   }
