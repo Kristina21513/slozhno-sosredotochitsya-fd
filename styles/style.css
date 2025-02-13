@@ -125,7 +125,7 @@
 }
 
 .header__paragraph {
-*margin-block-start: 55px;
+margin-block-start: 55px;
 }
 
 section {
@@ -240,6 +240,7 @@ img {
   .header {
     grid-template-columns: 1fr 1fr;
     margin-block-end: 0;
+    padding-block-end: 0;
   }
 
   .header__theme-menu {
@@ -366,6 +367,7 @@ img {
 
   .heading {
     grid-column: span 4;
+    padding-block-end: 0;
   }
 
   .header__paragraph {
