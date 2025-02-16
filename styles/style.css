@@ -26,7 +26,7 @@
 }
 
 .decor {
-  display: none;
+ display: none;
 }
 
 .decor::before {
@@ -35,6 +35,7 @@
   color: var(--accent-color);
   inset-block-start: 0px;
   inset-inline-end: 28px;
+  display: block;
 }
 
 .decor::after {
@@ -48,6 +49,7 @@
   box-shadow: 0 0 4px 2px var(--accent-color);
   inset-block-start: 8px;
   inset-inline-end: 9px;
+  display: block; 
 }
 
 .decorated-zone::before {
@@ -345,7 +347,6 @@ img {
   .header {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 2fr;
-    grid-template-rows: 1fr max-content 1fr;
   }
 
   .header__theme-menu {
