@@ -127,7 +127,7 @@
 }
 
 .content {
-  padding: var(--margin-s);
+  padding: 0 var(--margin-s);
 }
 
 section {
@@ -271,7 +271,7 @@ img {
     align-self: center;
   }
   .content {
-    padding: var(--margin-m);
+    padding: 0 var(--margin-m);
   }
 
   .content__item > .title {
