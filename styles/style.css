@@ -5,9 +5,9 @@
   font-size: var(--font-size);
   line-height: var(--line-height);
   background-image: var(--bg-image);
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-height: 100vh;
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
@@ -22,7 +22,7 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  margin: var(--margin-s)
+  padding: var(--margin-s)
 }
 
 .decor {
@@ -59,8 +59,8 @@
   block-size: 24px;
   border-top:  1px solid var(--accent-color);
   border-right:  1px solid var(--accent-color);
-  inset-block-start: 0px;
-  inset-inline-end: 0px;
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
 }
 
 .decorated-zone::after {
@@ -70,8 +70,8 @@
   block-size: 24px;
   border-bottom:  1px solid var(--accent-color);
   border-left:  1px solid var(--accent-color);
-  inset-block-end: 0px;
-  inset-inline-start: 0px;
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
 }
 
 .header__theme-menu {
@@ -209,7 +209,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: var(--margin-s);
+  padding: var(--margin-s);
 }
 
 .footer::before {
@@ -219,8 +219,8 @@ img {
   block-size: 24px;
   border-top:  1px solid var(--accent-color);
   border-right:  1px solid var(--accent-color);
-  inset-block-start: 0px;
-  inset-inline-end: 0px;
+  inset-block-start: var(--margin-s);
+  inset-inline-end: var(--margin-s);
 }
 
 .footer::after {
@@ -230,8 +230,8 @@ img {
   block-size: 24px;
   border-bottom:  1px solid var(--accent-color);
   border-left:  1px solid var(--accent-color);
-  inset-block-end: 0px;
-  inset-inline-start: 0px;
+  inset-block-end: var(--margin-s);
+  inset-inline-start: var(--margin-s);
 }
 
 
@@ -239,7 +239,17 @@ img {
 
   .header {
     grid-template-columns: 1fr 1fr;
-    margin: var(--margin-m);
+    padding: var(--margin-m);
+  }
+
+  .decorated-zone::before {
+    inset-block-start: var(--margin-m);
+    inset-inline-end: var(--margin-m)
+  }
+  
+  .decorated-zone::after {
+    inset-block-end: var(--margin-m);
+    inset-inline-start: var(--margin-m);
   }
 
   .header__theme-menu {
@@ -339,7 +349,17 @@ img {
   }
 
   .footer {
-   margin: var(--margin-m);
+   padding: var(--margin-m);
+  }
+
+  .footer::before {
+    inset-block-start: var(--margin-m);
+    inset-inline-end: var(--margin-m);
+  }
+  
+  .footer::after {
+    inset-block-end: var(--margin-m);
+    inset-inline-start: var(--margin-m);
   }
 }
 
