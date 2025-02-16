@@ -1,7 +1,5 @@
 
 .page {
-  margin: 0;
-  padding: var(--margin-s);
   background-color: var(--bg-color);
   font-family: var(--main-font);
   font-size: var(--font-size);
@@ -12,11 +10,8 @@
   min-height: 100vh;
   object-fit: cover;
   object-position: center;
-  display: flex;
-  flex-direction: column;
   inline-size: 100%;
   overflow: auto;
-  flex-wrap: nowrap;
 }
 
 .header {
@@ -25,10 +20,13 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   position: relative;
-  margin-block-end: 10px;
   align-items: center;
   justify-content: center;
-  padding-block-end: 55px;
+  margin: var(--margin-s)
+}
+
+.decor {
+  display: none;
 }
 
 .decor::before {
@@ -76,7 +74,6 @@
 
 .header__theme-menu {
   justify-self: end;
-  padding-block: 65px;
   grid-row: 1 /2;
 }
 
@@ -84,8 +81,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-block: 0px;
-  padding-block: 0px;
 }
 
 .header__theme-menu-button {
@@ -126,7 +121,11 @@
 }
 
 .header__paragraph {
-margin-block-start: 55px;
+ align-self: center;
+}
+
+.content {
+  padding: var(--margin-s);
 }
 
 section {
@@ -208,6 +207,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: var(--margin-s);
 }
 
 .footer::before {
@@ -234,18 +234,13 @@ img {
 
 
 @media (width >= 768px) {
-  .page {
-    padding: var(--margin-m);
-  }
 
   .header {
     grid-template-columns: 1fr 1fr;
-    margin-block-end: 0;
-    padding-block-end: 0;
+    margin: var(--margin-m);
   }
 
   .header__theme-menu {
-    padding-block: 173px;
     grid-column: 2 /3;
   }
 
@@ -262,6 +257,9 @@ img {
   .header__paragraph {
     grid-column: 2 / 3;
     align-self: center;
+  }
+  .content {
+    padding: var(--margin-m);
   }
 
   .content__item > .title {
@@ -339,7 +337,7 @@ img {
   }
 
   .footer {
-    padding-block: 441px;
+   margin: var(--margin-m);
   }
 }
 
@@ -351,7 +349,6 @@ img {
   }
 
   .header__theme-menu {
-    padding-block: 0px;
     grid-column: 2 / 4;
     justify-self: center;
     align-self: start;
@@ -370,7 +367,6 @@ img {
 
   .header__paragraph {
     grid-column: 3 / 5;
-    margin-block: 114px;
   }
 
   .content__text-block {
@@ -391,9 +387,5 @@ img {
 
   .content_picture {
     grid-template-rows: auto auto 433px;
-  }
-
-  .footer {
-    padding-block: 299px;
   }
 }
