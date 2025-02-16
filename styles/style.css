@@ -26,7 +26,9 @@
 }
 
 .decor {
- display: none;
+ position: absolute;
+ inset-inline-end: 10px;
+ inset-block-start: 10px;
 }
 
 .decor::before {
@@ -35,7 +37,6 @@
   color: var(--accent-color);
   inset-block-start: 0px;
   inset-inline-end: 28px;
-  display: block;
 }
 
 .decor::after {
@@ -49,7 +50,6 @@
   box-shadow: 0 0 4px 2px var(--accent-color);
   inset-block-start: 8px;
   inset-inline-end: 9px;
-  display: block; 
 }
 
 .decorated-zone::before {
@@ -242,6 +242,12 @@ img {
     padding: var(--margin-m);
   }
 
+  .decor {
+    position: absolute;
+    inset-inline-end: 20px;
+    inset-block-start: 20px;
+   }
+
   .decorated-zone::before {
     inset-block-start: var(--margin-m);
     inset-inline-end: var(--margin-m)
@@ -282,8 +288,8 @@ img {
     display: grid;
     grid-template-columns: 30.76vw auto;
     grid-auto-rows: auto;
-    margin-block-start: 80px;
-    margin-block-end: 78px;
+    margin-block-start: 60px;
+    margin-block-end: 80px;
     gap: var(--margin-m);
   }
 
