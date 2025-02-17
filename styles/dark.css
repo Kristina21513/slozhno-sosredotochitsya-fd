@@ -6,6 +6,8 @@
   --font-weight-bold: 700;
   --font-weight-normal: 400;
   --accent-color:#ff0070;
+  --decor-color:#ff0070;
+  --bt-color: #ff0070;
   --accent-text-color: #000028;
   --main-text-color:#f1b2ce;
   --bg-color:var(--accent-text-color);
@@ -17,17 +19,22 @@
   --bg-image: url(../images/cover-image-dark.png);
 }
 
-.theme-dark .page {
-  background-color: var(--bg-color);
-}
 
 .theme-dark .decor::before {
   display: block;
 }
+
 .theme-dark .decor::after {
   display: block;
 }
 
+.theme-dark .header__theme-menu-button:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.4);
+ }
+/*
+.theme-dark .page {
+  background-color: var(--bg-color);
+}
 .theme-dark .decorated-zone::before {
   border-top:  1px solid var( --accent-color);
   border-right:  1px solid var( --accent-color);
@@ -60,3 +67,4 @@
 border-bottom:  1px solid var( --accent-color);
 border-left:  1px solid var( --accent-color);
 }
+*/
