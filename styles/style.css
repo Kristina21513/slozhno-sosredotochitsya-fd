@@ -263,6 +263,10 @@ img {
     padding: 0 var(--margin-m);
   }
 
+  section:not(:last-of-type) {
+    margin-block-end: 80px;
+  }
+
   section:last-of-type {
     margin-block-end: 60px;
   }
@@ -306,7 +310,7 @@ img {
   .content__item > h4:first-of-type {
     margin-block-start: var(--margin-m);
   }
-  
+
   .content_picture {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
