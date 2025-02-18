@@ -21,6 +21,14 @@
   outline: 1px solid rgba(50, 49, 45, 0.4);
  }
 
+.theme-light .content__title {
+  color: var(--main-text-color); 
+}
+
+.theme-light .title-decor {
+  color: var(--main-text-color);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color:#FF8DCB;
@@ -34,13 +42,21 @@
     
     .decor::before {
       display: none;
-    }
+  }
 
      .decor::after {
       display: none;
-    }
+  }
 
     .header__theme-menu-button:hover {
       outline: 1px solid rgba(50, 49, 45, 0.4);
-     }
+  }
+
+    .content__title {
+      color: var(--main-text-color); 
+  }
+
+    .title-decor {
+      color: var(--main-text-color);
+  }
    }
