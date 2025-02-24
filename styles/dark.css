@@ -1,24 +1,23 @@
-
-
 :root.theme-dark {
   --main-font: 'IBM Plex mono';
   --font-size: 18px;
   --font-weight-bold: 700;
   --font-weight-normal: 400;
+  --line-height: 130%;
   --accent-color:#ff0070;
   --decor-color:#ff0070;
   --bt-color: #ff0070;
+  --h3-color: #000028;
   --accent-text-color: #000028;
   --main-text-color:#f1b2ce;
-  --bg-color:var(--accent-text-color);
+  --bg-color: #000028;
   --h1-color:#DB00FF;
-  --line-height: 130%;
+  --outline-color: #ff007066;
   --margin-s: 10px;
   --margin-m: 20px;
   --margin-l: 40px;
   --bg-image: url(../images/cover-image-dark.png);
 }
-
 
 .theme-dark .decor::before {
   display: block;
@@ -27,7 +26,3 @@
 .theme-dark .decor::after {
   display: block;
 }
-
-.theme-dark .header__theme-menu-button:hover {
-  outline: 1px solid rgba(255, 0, 112, 0.4);
- }
